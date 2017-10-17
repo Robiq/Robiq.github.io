@@ -18,24 +18,24 @@
 		TV:<br>
 		<div id="f1">
 			<input id="1amt" type="number" value=0 hidden>
-			<button id=1 onclick="calculate(this.id)">Add item!</button>	-	<div id="i1">Total: 0</div>
+			<button id=1 onclick="return calculate(this.id);">Add item!</button>	-	<div id="i1">Total: 0</div>
 		</div><br>
 		Radio:<br>
 		<div id="f2">
 			<input id="2amt" type="number" value=0 hidden>
-			<button id=2 onclick="calculate(this.id)">Add item!</button>	-	<div id="i2">Total: 0</div>
+			<button id=2 onclick="return calculate(this.id);">Add item!</button>	-	<div id="i2">Total: 0</div>
 		</div><br>
 		Computer:
 		<br>
 		<div id="f3">
 			<input id="3amt" type="number" value=0 hidden>
-			<button id=3 onclick="calculate(this.id)">Add item!</button>	-	<div id="i3">Total: 0</div>
+			<button id=3 onclick="return calculate(this.id);">Add item!</button>	-	<div id="i3">Total: 0</div>
 		</div><br>
 	</form>
 	
 	<h4></h4>
 	<!-- Total sum -->
-	<button id=4 onclick="totalSum()">Calculate total sum!</button>
+	<button id=4 onclick="return totalSum();">Calculate total sum!</button>
 	<h4 id="total sum"></h4>
 </body>
 </html>
