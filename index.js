@@ -56,5 +56,6 @@ function showPrices(btn) {
 }
 
 function buy(){
+	totalSum();
 	document.body.innerHTML = "<h2>Your purchase is: " + formatter.format(sum) +"</h2>";
 }
