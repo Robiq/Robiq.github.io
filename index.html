@@ -1,0 +1,41 @@
+<html>
+<head>
+	<script type="text/javascript" src="index.js"></script>
+	<h1>Parameter tampering demo</h1>
+</head>
+<body>
+	<!-- Use form to store all the information -->
+	<form id="prices" hidden>
+		<input id="p_1" value=25000>
+		<input id="p_2" value=5000>
+		<input id="p_3" value=50000>
+	</form>
+
+	<!--ITEM AND COUNTER and SUM-->
+	<h3>Buy things</h3>
+	<form id="form">
+		<!-- Use divs? DO NOT USE SAME IDs -->
+		TV:<br>
+		<div id="f1">
+			<input id="1amt" type="number" value=0 hidden>
+			<button id=1 onclick="calculate(this.id)">Add item!</button>	-	<div id="i1">Total: 0</div>
+		</div><br>
+		Radio:<br>
+		<div id="f2">
+			<input id="2amt" type="number" value=0 hidden>
+			<button id=2 onclick="calculate(this.id)">Add item!</button>	-	<div id="i2">Total: 0</div>
+		</div><br>
+		Computer:
+		<br>
+		<div id="f3">
+			<input id="3amt" type="number" value=0 hidden>
+			<button id=3 onclick="calculate(this.id)">Add item!</button>	-	<div id="i3">Total: 0</div>
+		</div><br>
+	</form>
+	
+	<h4></h4>
+	<!-- Total sum -->
+	<button id=4 onclick="totalSum()">Calculate total sum!</button>
+	<h4 id="total sum"></h4>
+</body>
+</html>
