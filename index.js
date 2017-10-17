@@ -17,7 +17,6 @@ function calculate(id){
 	amtInt++;
 	amt.value = amtInt;
 	sumL = parseInt(amtInt * val, 10);
-	console.log("val: " + val + " amt: " + amt.value + " sum: " + sumL);
 	document.getElementById("i"+id).innerHTML = "Quantity: " + amt.value + " Total: " + formatter.format(sumL);
 	return false;
 }
@@ -29,7 +28,6 @@ function summarize(id){
 	amt = document.getElementById(id+"amt").value;
 	amtInt = parseInt(amt);
 	sumL = parseInt(amtInt * val, 10);
-	console.log("Summ: val: " + val + " amt: " + amt + " sum: " + sumL);
 	return sumL;
 }
 
