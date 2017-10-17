@@ -4,38 +4,43 @@
 	<h1>Parameter tampering demo</h1>
 </head>
 <body>
-	<!-- Use form to store all the information -->
-	<form id="prices" hidden>
+	<!-- Change these values and see what happens!!! -->
+	<h4 id="pTxt" style="display:none;">Prices</h4>
+	<form id="prices" style="display:none;">
+		TV:
 		<input id="p_1" value=25000>
+		Radio:
 		<input id="p_2" value=5000>
+		Computer:
 		<input id="p_3" value=50000>
 	</form>
+	<button id="show" onclick="return showPrices(this);">Show prices!</button>
 
 	<!--ITEM AND COUNTER and SUM-->
 	<h3>Buy things</h3>
 	<form id="form">
-		<!-- Use divs? DO NOT USE SAME IDs -->
 		TV:<br>
 		<div id="f1">
 			<input id="1amt" type="number" value=0 hidden>
-			<button id=1 onclick="return calculate(this.id);">Add item!</button>	-	<div id="i1">Total: 0</div>
+			<button id=1 onclick="return calculate(this.id);">Add item!</button>	-	<div id="i1">Quantity: 0 Total: 0</div>
 		</div><br>
 		Radio:<br>
 		<div id="f2">
 			<input id="2amt" type="number" value=0 hidden>
-			<button id=2 onclick="return calculate(this.id);">Add item!</button>	-	<div id="i2">Total: 0</div>
+			<button id=2 onclick="return calculate(this.id);">Add item!</button>	-	<div id="i2">Quantity: 0 Total: 0</div>
 		</div><br>
 		Computer:
 		<br>
 		<div id="f3">
 			<input id="3amt" type="number" value=0 hidden>
-			<button id=3 onclick="return calculate(this.id);">Add item!</button>	-	<div id="i3">Total: 0</div>
+			<button id=3 onclick="return calculate(this.id);">Add item!</button>	-	<div id="i3">Quantity: 0 Total: 0</div>
 		</div><br>
 	</form>
 	
-	<h4></h4>
 	<!-- Total sum -->
-	<button id=4 onclick="return totalSum();">Calculate total sum!</button>
+	<button onclick="return totalSum();">Calculate total sum!</button>
 	<h4 id="total sum"></h4>
+
+	<button onclick="return buy();">BUY</button>
 </body>
 </html>
